@@ -1,110 +1,240 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Prasad Khanapure | Frontend React Developer</title>
-
+    <title>Prasad Khanapure | Frontend UI Developer (React)</title>
     <meta
       name="description"
-      content="Frontend React Developer with 6 years of experience building scalable, performant web applications."
+      content="Frontend UI Developer with 6 years of experience building scalable, performant React applications with strong focus on design, UX, and maintainability."
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#38bdf8",
+            },
+          },
+        },
+      };
+    </script>
   </head>
 
-  <body>
-    <header class="hero">
-      <h1>Prasad Khanapure</h1>
-      <h2>Frontend Developer • React JS</h2>
-      <p>
-        Frontend developer with <strong>6 years of experience</strong> building
-        scalable, high-performance web applications using React, JavaScript,
-        and modern UI frameworks.
-      </p>
+  <body
+    class="antialiased tracking-tight transition-colors"
+    style="
+      background-image: url(&quot;https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1920&auto=format&fit=crop&quot;);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    "
+  >
+    <div
+      class="min-h-screen bg-white/80 dark:bg-slate-900/85 backdrop-blur-md text-gray-900 dark:text-gray-100"
+    >
+      <!-- HEADER / HERO -->
+      <header class="max-w-5xl mx-auto px-6 py-20">
+        <div class="flex items-start justify-between">
+          <div>
+            <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+              Prasad Khanapure
+            </h1>
+            <p class="mt-2 text-lg text-primary">
+              SDE | UI | React JS
+            </p>
+          </div>
 
-      <div class="hero-actions">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="https://github.com/prasadkhanapure" target="_blank" class="btn secondary">
-          GitHub
-        </a>
-      </div>
-    </header>
-
-    <main>
-      <!-- ABOUT -->
-      <section class="section">
-        <h3>About Me</h3>
-        <p>
-          I specialize in building clean, maintainable frontend architectures
-          with React. I’ve worked on enterprise-scale applications, complex UI
-          workflows, and performance-critical systems.
-        </p>
-        <p>
-          I care deeply about code quality, UX, and long-term maintainability.
-        </p>
-      </section>
-
-      <!-- SKILLS -->
-      <section class="section">
-        <h3>Skills</h3>
-        <ul class="skills">
-          <li>React.js (Hooks, Context, Performance Optimization)</li>
-          <li>JavaScript (ES6+), TypeScript</li>
-          <li>HTML5, CSS3, Tailwind CSS</li>
-          <li>Redux / Zustand</li>
-          <li>REST APIs, Firebase</li>
-          <li>Git, GitHub, CI/CD basics</li>
-        </ul>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="section">
-        <h3>Projects</h3>
-
-        <div class="project">
-          <h4>Netflix-GPT</h4>
-          <p>
-            A React-based application integrating AI-powered movie
-            recommendations with modern UI patterns.
-          </p>
-          <a
-            href="https://github.com/prasadkhanapure/netflix-with-gpt"
-            target="_blank"
+          <button
+            id="themeToggle"
+            class="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-700 text-sm hover:bg-gray-100 dark:hover:bg-slate-800 transition"
+            aria-label="Toggle dark mode"
           >
-            View on GitHub →
-          </a>
+            Dark Theme 🌙
+          </button>
         </div>
 
-        <div class="project">
-          <h4>Food Delivery UI (Swiggy-style)</h4>
-          <p>
-            Built a responsive food delivery interface using React, reusable
-            components, and API-driven data.
+        <p class="mt-8 max-w-3xl text-gray-700 dark:text-gray-300 text-lg">
+          Frontend UI developer with <strong>6 years of experience</strong>
+          building scalable, high-performance web applications using React. I
+          focus on clean architecture, thoughtful UX, and interfaces that feel
+          obvious and calm.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            class="px-6 py-2 rounded-full bg-primary text-slate-900 font-medium hover:opacity-90 transition"
+          >
+            View Projects
+          </a>
+          <a
+            href="https://github.com/prasadkhanapure"
+            target="_blank"
+            class="px-6 py-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-slate-800 transition"
+          >
+            GitHub
+          </a>
+        </div>
+      </header>
+
+      <div
+        class="h-px bg-gray-200/60 dark:bg-slate-700 max-w-5xl mx-auto"
+      ></div>
+
+      <main class="max-w-5xl mx-auto px-6">
+        <section class="mt-20">
+          <h2 class="text-2xl font-semibold mb-4">About</h2>
+          <p class="max-w-3xl text-gray-700 dark:text-gray-300">
+            I specialize in building modern frontend systems with React,
+            focusing on reusable components, predictable state management, and
+            performance optimization. I’ve worked on enterprise-scale
+            applications and complex UI workflows where maintainability matters.
           </p>
-        </div>
-      </section>
+        </section>
 
-      <!-- CONTACT -->
-      <section class="section">
-        <h3>Contact</h3>
-        <p>
-          Email:
-          <a href="mailto:prasadkhanapure@gmail.com">
-            prasadkhanapure@gmail.com
-          </a>
-        </p>
-        <p>
-          GitHub:
-          <a href="https://github.com/prasadkhanapure" target="_blank">
-            github.com/prasadkhanapure
-          </a>
-        </p>
-      </section>
-    </main>
+        <section class="mt-20">
+          <h2 class="text-2xl font-semibold mb-6">Skills</h2>
+          <ul
+            class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-8 text-gray-700 dark:text-gray-300"
+          >
+            <li>React.js (Hooks, Context, Performance Optimization)</li>
+            <li>JavaScript (ES6+), TypeScript</li>
+            <li>HTML5, CSS3, Tailwind CSS</li>
+            <li>Redux, Zustand</li>
+            <li>REST APIs, Firebase</li>
+            <li>Git, GitHub, CI/CD basics</li>
+          </ul>
+        </section>
 
-    <footer>
-      © 2025 Prasad Khanapure
-    </footer>
+        <section id="projects" class="mt-20">
+          <h2 class="text-2xl font-semibold mb-8">Projects</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="p-6 rounded-xl border border-gray-200 dark:border-slate-700 bg-white/60 dark:bg-slate-900/60 transition-transform hover:-translate-y-1"
+            >
+              <h3 class="text-lg font-medium">Netflix-GPT</h3>
+              <p class="mt-2 text-gray-700 dark:text-gray-300">
+                AI-powered movie recommendation application built with React and
+                OpenAI APIs.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900/40"
+                  >React</span
+                >
+                <span
+                  class="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900/40"
+                  >OpenAI</span
+                >
+                <span
+                  class="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900/40"
+                  >Tailwind</span
+                >
+              </div>
+
+              <a
+                href="https://github.com/prasadkhanapure/netflix-with-gpt"
+                target="_blank"
+                class="inline-block mt-4 text-primary font-medium"
+              >
+                View on GitHub →
+              </a>
+            </div>
+
+            <div
+              class="p-6 rounded-xl border border-gray-200 dark:border-slate-700 bg-white/60 dark:bg-slate-900/60 transition-transform hover:-translate-y-1"
+            >
+              <h3 class="text-lg font-medium">Food Delivery UI</h3>
+              <p class="mt-2 text-gray-700 dark:text-gray-300">
+                Swiggy-style food delivery UI built with React, API-driven data,
+                and responsive design patterns.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900/40"
+                  >React</span
+                >
+                <span
+                  class="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900/40"
+                  >APIs</span
+                >
+                <span
+                  class="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900/40"
+                  >UI Design</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-20">
+          <h2 class="text-2xl font-semibold mb-4">Design Principles</h2>
+          <ul
+            class="list-disc list-inside text-gray-700 dark:text-gray-300 max-w-3xl"
+          >
+            <li>Clarity over cleverness</li>
+            <li>Consistency beats creativity</li>
+            <li>Performance is part of UX</li>
+          </ul>
+        </section>
+
+        <section class="mt-20 mb-24">
+          <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+          <p class="text-gray-700 dark:text-gray-300">
+            Email:
+            <a href="mailto:prasadkhanapure@gmail.com" class="text-primary">
+              prasadkhanapure@gmail.com
+            </a>
+          </p>
+          <p class="mt-2">
+            GitHub:
+            <a
+              href="https://github.com/prasadkhanapure"
+              target="_blank"
+              class="text-primary"
+            >
+              github.com/prasadkhanapure
+            </a>
+          </p>
+          <p class="mt-2">
+            LinkedIn:
+            <a
+              href="http://linkedin.com/in/prasad-khanapure"
+              target="_blank"
+              class="text-primary"
+            >
+              linkedin.com/in/prasad-khanapure
+            </a>
+          </p>
+        </section>
+      </main>
+
+      <footer
+        class="text-center text-sm text-gray-500 dark:text-gray-400 py-8 border-t border-gray-200 dark:border-slate-700"
+      >
+        © 2026 Prasad Khanapure
+      </footer>
+    </div>
+
+    <script>
+      const toggleBtn = document.getElementById("themeToggle");
+      const root = document.documentElement;
+
+      if (localStorage.theme === "dark") {
+        root.classList.add("dark");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        root.classList.toggle("dark");
+        localStorage.theme = root.classList.contains("dark") ? "dark" : "light";
+      });
+    </script>
   </body>
 </html>
