@@ -28,7 +28,7 @@ https://prasadkhanapure.github.io
 
 ---
 
-## 🚀 Projects
+## Projects
 
 ### Netflix-GPT
 
